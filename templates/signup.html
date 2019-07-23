@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	    <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> 
+    </head>
+    <body>
+        <h1> Vous êtes sur la de signup </h1>
+        <h2>Formulaire d'inscription a rien du tout</h2>
+        <form action="#">
+          <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+          <fieldset>
+            <legend>Contact</legend>
+              <label for="nom">Nom <em>*</em></label>
+              <input id="nom" placeholder="ROBILLIARD"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
+              <label for="prenom" >Prénom <em>*</em></label>
+              <input id="prenom" placeholder="Tanguy" autofocus="" required=""><br>
+              <label for="telephone">Portable</label>
+              <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="+33 [6-7]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"><br>
+              <label for="email">Email <em>*</em></label>
+              <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@[a-zA-Z]*.[a-zA-Z]*"><br>
+              <label for="password">Password <em>*</em></label>
+              <input id="password" type="password" placeholder="********" required="" ><br>
+              <label for="age">Age<em>*</em></label>
+              <select id="age" >
+                    <option value="10" name="age">10</option>
+                    <option value="11" name="age">11</option>
+                    <option value="12" name="age">12</option>
+                    <option value="13" name="age">13</option>
+                    <option value="14" name="age">14</option>
+                    <option value="15" name="age">15</option>
+                    <option value="16" name="age">16</option>
+                    <option value="17" name="age">17</option>
+                    <option value="18" name="age">18</option>
+                    <option value="19" name="age">19</option>
+                    <option value="20" name="age">20</option>
+                    <option value="21" name="age">21</option>
+                    <option value="22" name="age">22</option>
+                    <option value="23" name="age">23</option>
+                    <option value="24" name="age">24</option>
+                    <option value="25" name="age">25</option>
+                    <option value="26" name="age">26</option>
+                    <option value="27" name="age">27</option>
+                    <option value="28" name="age">28</option>
+                    <option value="29" name="age">29</option>
+                    <option value="30" name="age">30</option>
+              </select><br>
+              <label class="left" >Sexe </label>
+              <input name="sexe" value="H" id="homme" type="radio" /><label for="homme"> Homme </label>
+              <input name="sexe" value="F" id="femme" type="radio" /><label for="femme"> Femme </label>
+              <input name="sexe" value="NB" id="nonbinaire" type="radio" /><label for="nonbinaire"> Non Binaire ... </label>                
+              </select><br>              
+          </fieldset>
+         
+          <fieldset>
+            <legend>Choisissez vos activité favorites</legend>
+            <label for="sport"><input id="sport" type="checkbox" name="activity" value="sprt"> Sport</label>
+            <label for="musique"><input id="musique" type="checkbox" name="activity" value="msq"> Musique</label>
+            <label for="voyage"><input id="voyage" type="checkbox" name="activity" value="vyge"> Voyage</label>
+            <label for="plage"><input id="plage" type="checkbox" name="activity" value="plge"> Plage</label>
+            <label for="lecture"><input id="lecture" type="checkbox" name="activity" value="lect"> Lecture</label>
+            <label for="theatre"><input id="theatre" type="checkbox" name="activity" value="thea"> Théâtre</label>
+            <label for="cinema"><input id="cinema" type="checkbox" name="activity" value="cine"> Cinéma</label>
+            <label for="soiree"><input id="soiree" type="checkbox" name="activity" value="teuf"> Soirées</label>
+            <br>
+            <label for="comments">Pourquoi avez vous choisi ces activités ? 
+                Avez-vous d'autres centres d'intérêt ? Si oui, précisez. 
+            </label>
+            <textarea id="comments"></textarea>       
+        </fieldset>
+        <fieldset>
+            <legend>Votre Pays d'Origine </legend>
+            <label for="pays">Pays </label>
+            <select id="pays" >
+                <option value="A" name="pays"> Autriche </option>
+                <option value="B" name="pays"> Belgique </option>
+                <option value="C" name="pays"> Canada </option>
+                <option value="D" name="pays"> Danemark </option>
+                <option value="E" name="pays"> Espagne </option>
+                <option value="F" name="pays"> France </option>                    
+                <option value="G" name="pays"> Gabon </option>
+                <option value="H" name="pays"> Hongrie </option>
+                <option value="I" name="pays"> Italie </option>
+                <option value="J" name="pays"> Jordanie </option>
+                <option value="L" name="pays"> Luxembourg </option>
+                <option value="M" name="pays"> Moldavie </option>
+                <option value="P" name="pays"> Pologne </option>                 
+                <option value="T" name="pays"> Tunisie </option>
+                <option value="US" name="pays"> USA </option>               
+        </fieldset>
+          <t><input type="submit" value="Soumettre"></t>
+        </form>
+    </body>
+</html>
