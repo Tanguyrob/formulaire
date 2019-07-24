@@ -15,7 +15,7 @@
               <label for="prenom" >Prénom <em>*</em></label>
               <input id="prenom" placeholder="Tanguy" text-transform= "capitalize" autofocus="" required=""><br>
               <label for="telephone">Portable</label>
-              <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="+33 [6-7]{1}[ ]([0-9]{2}[ ]){4}"><br>
+              <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="([0-9]{2}[. ]){5}"><br>
               <label for="email">Email <em>*</em></label>
               <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
               <label for="password">Password <em>*</em></label>
@@ -47,9 +47,9 @@
               </select><br>
               
               <label class="left" >Sexe </label>
-             <centre> <label for="homme" ></label><input name="sexe" value="H" id="homme" type="radio" > Homme </label></centre><br>
-             <centre> <label for="femme"><input name="sexe" value="F" id="femme" type="radio" > Femme </label></centre><br>
-              <centre><label for="nonbinaire"><input name="sexe" value="NB" id="nonbinaire" type="radio" > Non Binaire ... </label></centre><br>        
+              <label for="homme" ></label><input name="sexe" value="H" id="homme" type="radio" > Homme </label><br>
+              <label for="femme"><input name="sexe" value="F" id="femme" type="radio" > Femme </label><br>
+              <label for="nonbinaire"><input name="sexe" value="NB" id="nonbinaire" type="radio" > Non Binaire ... </label><br>        
               <br>              
           </fieldset>
          
