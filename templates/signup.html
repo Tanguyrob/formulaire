@@ -4,7 +4,7 @@
 	    <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> 
     </head>
     <body>
-        <t> Inscription </t>
+        <s> Inscription </s>
         <h2>Formulaire d'inscription a rien du tout</h2>
         <form action="#">
           <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
@@ -44,11 +44,12 @@
                     <option value="29" name="age">29</option>
                     <option value="30" name="age">30</option>
               </select><br>
+              <select>
               <label class="left" >Sexe </label>
-              <label for="homme" ></label><input name="sexe" value="H" id="homme" type="radio" /> Homme </label><br>
+             <centre> <label for="homme" ></label><input name="sexe" value="H" id="homme" type="radio" /> Homme </label><br>
               <label for="femme"><input name="sexe" value="F" id="femme" type="radio" /> Femme </label><br>
               <label for="nonbinaire"><input name="sexe" value="NB" id="nonbinaire" type="radio" /> Non Binaire ... </label><br>        
-              </select><br>              
+              </centre></select><br>              
           </fieldset>
          
           <fieldset>
