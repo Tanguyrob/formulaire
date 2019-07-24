@@ -13,11 +13,11 @@
               <label for="nom">Nom <em>*</em></label>
               <input id="nom" placeholder="ROBILLIARD"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
               <label for="prenom" >Prénom <em>*</em></label>
-              <input id="prenom" placeholder="Tanguy" autofocus="" required=""><br>
+              <input id="prenom" placeholder="Tanguy" text-transform= "capitalize" autofocus="" required=""><br>
               <label for="telephone">Portable</label>
-              <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="+33 [6-7]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"><br>
+              <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="+33 [6-7]{1}[ ]([0-9]{2}[ ]){4}"><br>
               <label for="email">Email <em>*</em></label>
-              <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@[a-zA-Z]*.[a-zA-Z]*"><br>
+              <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
               <label for="password">Password <em>*</em></label>
               <input id="password" type="password" placeholder="********" required="" ><br>
               <label for="age">Age<em>*</em></label>
