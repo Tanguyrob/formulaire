@@ -62,6 +62,7 @@ s{text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00F
    
   textarea {
     height: 100px;
+    width:  180px;
   }
    
   select {
@@ -78,5 +79,6 @@ s{text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00F
   }
 
   centre{
-    text-align: center;
+    margin: 0;
+    vertical-align: middle;
   }
