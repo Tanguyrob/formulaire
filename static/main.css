@@ -6,8 +6,10 @@ p {
   }
 
 
-ts{text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
-  background-color:#262626;}
+ts{
+  text-shadow:0 0 20px rgb(7, 255, 251),2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
+  background-color:#272727;
+}
    
   fieldset {
     margin-bottom: 15px;
