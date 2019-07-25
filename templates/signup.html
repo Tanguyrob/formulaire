@@ -4,10 +4,11 @@
 	    <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> 
     </head>
     <body>
+
         <h1> Formulaire d'Inscription </h1>
         <h3>Formulaire d'inscription a rien du tout</h3>
         <form action="/basedonnees" method="POST"> 
-          <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+          <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> <i>sont</i><em>obligatoires</em></p>
           <fieldset>
             <legend>Contact</legend>
               <label for="nom">Nom <em>*</em></label>
@@ -15,7 +16,7 @@
               <label for="prenom" >Prénom <em>*</em></label>
               <input id="prenom" placeholder="Tanguy" text-transform= "capitalize" autofocus="" required=""><br>
               <label for="telephone">Portable</label>
-              <input id="telephone" type="tel" placeholder="0607080910" pattern="([0-9]{2}){5}"><br>
+              <input id="telephone" type="tel" placeholder="0607080910" maxlength="10"pattern="[0-9]{10}"><br>
               <label for="email">Email <em>*</em></label>
               <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
               <label for="password">Password <em>*</em></label>
@@ -89,8 +90,26 @@
                 <option value="US" name="pays"> USA </option>      
                 </select>         
         </fieldset><br>
+        <label for="avis" >Votre avis sur la qualité de ce formulaire</label><br><br>
+        <input type="range" list="avis" min = "0" max = "10">
+        <datalist id="avis">
+            <option value="0" label="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5" label="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10" label="10">
+        </datalist>      
+        <br>
         <input type="submit" value="Finir l'inscription"> 
         </form>
+<br><br>
+        <a href="{{url_for('signin')}}" > Déjà un compte ? Connection </a>
           
     </body>
 </html>
