@@ -1,16 +1,24 @@
 body{
     text-align: center;
+    
 }
+
 p {
     margin-top: 0px;
   }
 
-
-ts{
-  text-shadow:0 0 20px rgb(7, 255, 251),2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
-  background-color:#272727;
-}
+  h1 { font-family: "Black Ops One"; 
+    font-size: 24px; font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; }
    
+    h3 { font-family: "Black Ops One"; 
+      font-size: 14px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 700; 
+      line-height: 15.4px; }
   fieldset {
     margin-bottom: 15px;
     padding: 10px;
@@ -49,6 +57,7 @@ ts{
   }
    
   select {
+
     width: 254px;
   }
    
@@ -59,17 +68,14 @@ ts{
   input[type=submit] {
     width: 150px;
     padding: 10px;
+    background-color: #00FFFC
   }
 
   input[type=radio]{
-width: 10px;
-margin-top: -3px;
-margin-right: 6px;
-display: inline-block;
-vertical-align: middle;
-  }
+  width: 10px;
+  margin: .4rem;
+  display: inline-block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
 
-  centre{
-    margin: 0;
-    vertical-align: middle;
-  }
+ 
