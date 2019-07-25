@@ -12,28 +12,33 @@ def hello():
 def signup():
     return render_template('signup.html')
 
-'''
-@app.route("/donnees", methods='POST')
+
+@app.route("/basedonnees", methods=['POST', 'GET'])
 def donnees():
-    if request.method:
-        nom = request.form['nom']
-        prenom = request.form['prenom']
-        telephone = request.form['telephone']
-        email = request.form['email']
-        password = request.form['password']
-        age = request.form['age']
-        sexe = request.form['sexe']    
-        sport = request.form['sport']
-        musique = request.form['musique']
-        voyage = request.form['voyage']
-        plage = request.form['plage']
-        lecture = request.form['lecture']
-        theatre = request.form['theatre']
-        cinema = request.form['cinema']
-        soiree = request.form['soiree']
-        comments = request.form['comments']
-        pays = request.form['pays']
-'''   
+    if request.method == 'GET':
+        nom = request.form.get("nom")['nom']
+        prenom = request.form.get("prenom")
+        telephone = request.form.get("telephone")
+        email = request.form.get("email")
+        password = request.form.get("password")
+        age = request.form.get("age")
+        sexe = request.form.get("sexe")    
+        sport = request.form.get("sport")
+        musique = request.form.get("musique")
+        voyage = request.form.get("voyage")
+        plage = request.form.get("plage")
+        lecture = request.form.get("lecture")
+        theatre = request.form.get("theatre")
+        cinema = request.form.get("cinema")
+        soiree = request.form.get("soiree")
+        comments = request.form.get("comment")
+        pays = request.form.get("pays")
+
+        return render_template("basedonnees.html", 
+        m1=nom, m2=prenom, m3=telephone, m4=email, m5=password, m6=age, 
+        m7=sexe, m8=sport, m9=musique, m10=voyage, m11=plage, m12=lecture, 
+        m13=theatre, m14=cinema, m15=soiree, m16=comments, m17=pays)
+
     
 @app.route("/signin", methods=["GET", "POST"])
 def signin():
