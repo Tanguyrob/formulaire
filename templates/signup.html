@@ -12,17 +12,17 @@
           <fieldset>
             <legend>Contact</legend>
               <label for="nom">Nom <em>*</em></label>
-              <input id="nom" placeholder="ROBILLIARD"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
+              <input id="nom" name="nom" placeholder="ROBILLIARD"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
               <label for="prenom" >Prénom <em>*</em></label>
-              <input id="prenom" placeholder="Tanguy" autofocus="" required=""><br>
+              <input id="prenom" name="prenom" placeholder="Tanguy" autofocus="" required=""><br>
               <label for="telephone">Portable</label>
-              <input id="telephone" type="tel" placeholder="0607080910" maxlength="10"pattern="[0-9]{10}" inputmode="numeric"><br>
+              <input id="telephone" name="telephone" type="tel" placeholder="0607080910" maxlength="10"pattern="[0-9]{10}" inputmode="numeric"><br>
               <label for="email">Email <em>*</em></label>
-              <input id="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+              <input id="email" name="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
               <label for="password">Password<sub><sub><sup> min 8</sup></sub></sub><em>*</em></label>
-              <input id="password" type="password" placeholder="********" minlength="8"required="" ><br>
+              <input id="password" name="password" type="password" placeholder="********" minlength="8"required="" ><br>
               <label for="age">Age<em>*</em></label>
-              <input id="age" type="date" required><br>
+              <input id="age" name="age" type="date" required><br>
               <label for="sexe">Sexe </label>
               <input type="radio" id="homme" name="sexe" value="H"  selected checked><label for="homme">Homme</label>
               <input type="radio" id="femme" name="sexe" value="F" checked><label for="femme">Femme</label>
@@ -44,12 +44,12 @@
             <label for="comments">Pourquoi avez vous choisi ces activités ? 
                 Avez-vous d'autres centres d'intérêt ? Si oui, précisez. 
             </label>
-            <textarea id="comments"></textarea>       
+            <textarea id="comments" name="comments"></textarea>       
         </fieldset>
         <fieldset>
             <legend>Votre Pays d'Origine </legend>
             <label for="pays">Pays </label>
-            <select id="pays" >
+            <select id="pays" name ="pays" >
                 <option value="A" name="pays"> Autriche </option>
                 <option value="B" name="pays"> Belgique </option>
                 <option value="C" name="pays"> Canada </option>
@@ -69,7 +69,7 @@
                 </select>         
         </fieldset><br>
         <label for="avis" >Votre avis sur la qualité de ce formulaire</label><br><br>
-        <input type="range" list="avis" min = "0" max = "10">
+        <input type="range" name="avis" list="avis" min = "0" max = "10">
         <datalist id="avis">
             <option value="0" label="0">
             <option value="1">
