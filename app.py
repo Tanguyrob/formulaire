@@ -16,7 +16,7 @@ def signup():
 @app.route("/basedonnees", methods=['POST', 'GET'])
 def donnees():
     if request.method == 'GET':
-        nom = request.form.get("nom")['nom']
+        nom = request.form.get("nom")
         prenom = request.form.get("prenom")
         telephone = request.form.get("telephone")
         email = request.form.get("email")
@@ -39,10 +39,13 @@ def donnees():
         m7=sexe, m8=sport, m9=musique, m10=voyage, m11=plage, m12=lecture, 
         m13=theatre, m14=cinema, m15=soiree, m16=comments, m17=pays)
 
-    
+@app.route("/login")
+def login():
+        return render_template("login.html")
+
+
 @app.route("/signin", methods=["GET", "POST"])
 def signin():
-    error = None
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
