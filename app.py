@@ -15,14 +15,16 @@ def signup():
 
 @app.route("/basedonnees", methods=['POST', 'GET'])
 def donnees():
-    if request.method == 'GET':
+    if request.method == 'POST': # meme request que method = 'POST' dans signup
+    # c'est pas parce que l'un est post que l'autre est get, c'est tous les deux les memes
         nom = request.form.get("nom")
         prenom = request.form.get("prenom")
         telephone = request.form.get("telephone")
         email = request.form.get("email")
         password = request.form.get("password")
         age = request.form.get("age")
-        sexe = request.form.get("sexe")    
+        sexe = request.form.get("sexe")
+        '''    
         sport = request.form.get("sport")
         musique = request.form.get("musique")
         voyage = request.form.get("voyage")
@@ -31,13 +33,21 @@ def donnees():
         theatre = request.form.get("theatre")
         cinema = request.form.get("cinema")
         soiree = request.form.get("soiree")
-        comments = request.form.get("comment")
+        '''
+        comments = request.form.get("comments")
+        activity = request.form.get("activity_list[]")
+        print(activity)
         pays = request.form.get("pays")
-
+        avis = request.form.get("avis")
+        '''
         return render_template("basedonnees.html", 
         m1=nom, m2=prenom, m3=telephone, m4=email, m5=password, m6=age, 
         m7=sexe, m8=sport, m9=musique, m10=voyage, m11=plage, m12=lecture, 
         m13=theatre, m14=cinema, m15=soiree, m16=comments, m17=pays)
+        '''
+        return render_template("basedonnees.html", 
+        m1=nom, m2=prenom, m3=telephone, m4=email, m5=password, m6=age, 
+        m7=sexe, m8= activity, m16=comments, m17=pays, m18=avis)
 
 @app.route("/login")
 def login():
