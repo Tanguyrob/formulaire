@@ -7,27 +7,29 @@
 
         <h1> Formulaire d'Inscription </h1>
         <h3>Formulaire d'inscription a rien du tout</h3>
-        <form action="/basedonnees" method="POST"> 
+        <form action="https://github.com" method="POST"> 
           <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> <i>sont </i><em>obligatoires</em></p>
           <fieldset>
             <legend>Contact</legend>
               <label for="nom">Nom <em>*</em></label>
-              <input id="nom" name="nom" placeholder="ROBILLIARD"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
+              <input id="nom" name="nom" placeholder="SMITH"  onkeyup="this.value=this.value.toUpperCase()" autofocus="" required=""><br>
               <label for="prenom" >Prénom <em>*</em></label>
-              <input id="prenom" name="prenom" placeholder="Tanguy" autofocus="" required=""><br>
+              <input id="prenom" name="prenom" placeholder="John" autofocus="" required=""><br>
               <label for="telephone">Portable</label>
               <input id="telephone" name="telephone" type="tel" placeholder="0607080910" maxlength="10"pattern="[0-9]{10}" inputmode="numeric"><br>
               <label for="email">Email <em>*</em></label>
               <input id="email" name="email" type="email" placeholder="prenom.nom@mail.com" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
               <label for="password">Password<sub><sub><sup> min 8</sup></sub></sub><em>*</em></label>
-              <input id="password" name="password" type="password" placeholder="********" minlength="8"required="" ><br>
+              <input id="password" name="password"  type="password" placeholder="********" minlength="8"required="" ><br>
               <label for="age">Date de Naissance <em>*</em></label>
               <input id="age" name="age" type="date" required><br>
               <label for="sexe">Sexe </label>
-              <input type="radio" id="homme" name="sexe" value="H"  selected checked><label for="homme">Homme</label>
-              <input type="radio" id="femme" name="sexe" value="F" checked><label for="femme">Femme</label>
-              <input type="radio" id="nonbinaire" name="sexe" value="NB" checked><label for="nonbinaire">Non Binaire</label>
-                           
+              <input type="radio" id="homme" name="sexe" value="H"  ><label for="homme"> Homme</label>
+              <input type="radio" id="femme" name="sexe" value="F" ><label  for="femme"> Femme</label>
+              <input type="radio" id="nonbinaire" name="sexe" value="NB"><label for="nonbinaire">Non Binaire</label>
+                <br>
+                <label for="enfants" > Combien d'enfants avez vous ?</label>
+                <input type="number" id="enfants" name= "enfants" min="0">
           </fieldset>
          
           <fieldset>
