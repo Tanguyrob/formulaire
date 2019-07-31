@@ -63,9 +63,9 @@
     </tr>
     <tr text-align="center">
       <td>sport</td>
-      <td><input type="checkbox" name="sport" value="<?php echo($result->sport) ;?>"></td>
+      <td><input type="checkbox" name="activity_list[]" value="<?php echo($result->activity) ;?>"></td>
     </tr>
-    <tr text-align="center">
+    /*<tr text-align="center">
       <td>musique</td>
       <td><input type="checkbox" name="musique" value="<?php echo($result->musique) ;?>"></td>
     </tr>
@@ -92,7 +92,7 @@
     <tr text-align="center">
       <td>soiree</td>
       <td><input type="checkbox" name="soiree" value="<?php echo($result->soiree) ;?>"></td>
-    </tr>
+    </tr>*/
     <tr text-align="center">
       <td>comments</td>
       <td><input type="text" name="comments" value="<?php echo($result->comments) ;?>"></td>
