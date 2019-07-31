@@ -8,3 +8,7 @@ ajout input type range label = 0, 5, 10 s'affichent pas pour l'instant
 
 
 php --> http://forums.mediabox.fr/wiki/tutoriaux/php/bdd/inserer-modifier-supprimer-des-donne-php
+https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913893-phpmyadmin
+https://www.supinfo.com/articles/single/909-phpmyadmin-creer-remplir-sa-base-donnees
+
+https://craym.eu/tutoriels/mysql/php_my_admin.html
