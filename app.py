@@ -6,14 +6,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return 'hello world'
+    return "hello world, rajoutez '/signup' dans l'URL "
 
 @app.route("/signup")
 def signup():
     return render_template('signup.html')
 
 
-@app.route("/basedonnees", methods=['POST', 'GET'])
+
+
+@app.route("/donnees", methods=['POST', 'GET'])
 def donnees():
     if request.method == 'POST': # meme request que method = 'POST' dans signup
     # c'est pas parce que l'un est post que l'autre est get, c'est tous les deux les memes
@@ -45,7 +47,7 @@ def donnees():
         m7=sexe, m8=sport, m9=musique, m10=voyage, m11=plage, m12=lecture, 
         m13=theatre, m14=cinema, m15=soiree, m16=comments, m17=pays)
         '''
-        return render_template("basedonnees.html", 
+        return render_template("donnees.php", 
         m1=nom, m2=prenom, m3=telephone, m4=email, m5=password, m6=age, 
         m7=sexe, m8= activity, m16=comments, m17=pays, m18=avis)
 
@@ -60,7 +62,6 @@ def signin():
         email = request.form["email"]
         password = request.form["password"]
         password_hash = hashlib.sha256(str(password).encode("utf-8")).hexdigest()
-
         req_connection_client = "SELECT * FROM Client where Email = '%s' AND PasswordHash = '%s' "
         cursor.execute(req_connection_client % (email, password_hash))
         resultat_connection_client = cursor.fetchall()
